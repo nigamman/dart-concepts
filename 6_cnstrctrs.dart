@@ -1,7 +1,7 @@
 class Cookie {
     //class variable
-    String shape;
-    int size;
+    final String shape;
+    final int size;
     //Constructor
     Cookie(this.shape, this.size) {
         print('Cookie constructor called');
