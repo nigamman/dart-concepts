@@ -18,7 +18,7 @@ int main () {
     print(upi.amount);
 
     Payment payment = Payment();
-    payment.due;
+    payment.due();
     print(payment.amount);
 
     return 0;
