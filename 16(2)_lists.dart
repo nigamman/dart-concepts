@@ -2,17 +2,29 @@ class Student {
     final String name;
 
     Student(this.name);
+
+    @override
+    String toString() => 'Student: $name'; 
 }
 
 void main () {
+    final namanStudent = Student('Naman');
+
     List studentList = [
-        Student('Naman'),
+        namanStudent,
         Student('Rakesh'),
         Student('Flutter'),
     ];
+    print(studentList);
 
-    final student = studentList[2];
-    print(student.name);
+    studentList.add(Student('New Kid'));
+    print(studentList);
+
+    studentList.insert(0, Student('starter'));
+    print(studentList);
+
+    studentList.remove(namanStudent);
+    print(studentList);
 }
 
 
